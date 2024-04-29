@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions Legaue</title>
+    <link rel="shortcut icon" href="images2/Champions_league.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bondi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- scroll to top -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Top</button>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div data-aos="fade-right" data-aos-duration="3000">
+                <a class="navbar-brand" href="#"><img src="images2/Champions_league.icon-removebg-preview.png"
+                        style="width: 80px;height: 80px; border-radius: 20px;"><span
+                        style="color: #fff; padding-left: 15px;">Champions league</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#Identification">Identification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#History">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#Current">Current</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#Contact">Contact</a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="search ps-3 pe-3 d-none d-lg-block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button onclick="openForm()" class="open-button">Log In</button>
+                <div class="form-popup" id="myForm">
+                    <form action="/submit" class="form-container">
+                        <h2>Register</h2>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Register</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- landing -->
+    <div class="landing d-flex justify-content-center align-items-center">
+        <div class="text-center text-light">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <h1>UEFA Champions League</h1>
+                <p class="fs-6 text-white-50 mb4">Organising body UEFA</p>
+                <a class="btn btn-danger rounded-pill main-btn" href="#">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
+    <div class="blog pt-5 pb-5">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <div class="main-title text-center mt-5 mb-5 position-relative">
+                    <img class="mb-2" src="images/title.png">
+                    <h1><span>Breaking News</span></h1>
+                    <!-- <p class="text-uppercase text-black-50">New Stories</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card">
+                        <img src="images2/4500.avif" class="card-img-top">
+                        <div class="card-body">
+                            <span class="text-black-50">April 17, 2024</span>
+                            <h5 class="card-title">Real Madrid exacted revenge on Manchester City to reach
+                                the Champions League semi-finals 4-3 on penalties after withstanding a barrage
+                                at the Etihad on Wednesday.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card">
+                        <img src="images2/960x0.webp" class="card-img-top">
+                        <div class="card-body">
+                            <span class="text-black-50">April 18, 2024</span>
+                            <h5 class="card-title">Bayern Munich 1-0 Arsenal (Agg: 3-2): Joshua Kimmich's header
+                                knocks Gunners out of Champions League in quarter-finals.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card">
+                        <img src="images2/3950444.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <span class="text-black-50">April 16, 2024</span>
+                            <h5 class="card-title">Paris Saint-Germain beat Barcelona 4-1 in the second leg of their
+                                Champions League quarterfinal to take the tie 6-4 on aggregate.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn btn-danger  rounded-pill main-btn" href="#">For More News...</a>
+        </div>
+    </div>
+    <!-- stuff -->
+    <div class="stuff pt-5" id="Identification">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <div class="main-title text-center mt-5 mb-5 position-relative">
+                    <img class="mb-4" src="images/title.png">
+                    <h2>IDENTIFICATION</h2>
+                    <p class="text-black-50 text-uppercase"></p>
+                </div>
+                <p class="description text-center mb-5 text-black-50 m-auto">
+                    The UEFA Champions League (previously known as the European Cup, abbreviated as UCL,
+                    or sometimes, UEFA CL) is an annual club association football competition organised
+                    by the Union of European Football Associations (UEFA)
+                </p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 text-center text-md-start">
+                    <div data-aos="fade-right" data-aos-duration="3000">
+                        <div class="text">
+                            <h4>Deciding The Competition</h4>
+                            <p class="text-black-50 fs-6">
+                                deciding the competition winners through a round robin group stage to qualify
+                                for a double-legged knockout format, and a single leg final. It is the most-watched club
+                                competitio
+                                in the world and the third most-watched football competition overall, behind only the
+                                UEFA
+                                European Championship and the FIFA World Cup.
+                            </p>
+                            <a class="btn btn-danger  rounded-pill main-btn" href="#">OERER ME ONE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="fade-left" data-aos-duration="3000">
+                        <img class="img-fluid" src="images2/i.png" alt=""
+                            style="width: 50%; height: 50%; margin-left: 10px;">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- features -->
+    <div class="features text-center pt-5 pb-5" id="History">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <div class="main-title mt-5 mb-5 position-relative">
+                    <img class="mb-4" src="images/title.png">
+                    <h2>History</h2>
+                    <p class="text-black-50 text-uppercase"> History of the European Cup and UEFA Champions League</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div data-aos="fade-up-right" data-aos-duration="3000">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-pencil fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">1955–1967: Beginnings</h4>
+                            <p class="text-black-50 lh-lg">The first European Cup took place
+                                during the 1955–56 season.The first European Cup match took place on 4 September 1955,
+                                and
+                                ended in a 3–3 draw between Sporting CP and Partizan.
+                                [21][22] The first goal in European Cup history was scored by João Baptista Martins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div data-aos="fade-up-right" data-aos-duration="3000">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-tv fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">1968–1982</h4>
+                            <p class="text-black-50 lh-lg">The 1967–68 season saw Manchester United become the first
+                                English
+                                team to win the European Cup,
+                                beating two-times winners Benfica 4–1 in the final.[49] This final came 10 years after
+                                the
+                                Munich air disaster, which had claimed the lives of eight United players
+                                and left their manager, Matt Busby, fighting for his life.[50]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div data-aos="fade-up-right" data-aos-duration="3000">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-plug fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">1982–1992: English dominance is broken</h4>
+                            <p class="text-black-50 lh-lg">In 1982–83, Hamburger SV broke the English dominance.
+                                Liverpool regained it in 1983–84 before losing to Juventus (1984–85); Steaua București
+                                then
+                                won in 1985–86,
+                                Porto in 1986–87, PSV Eindhoven in 1987–88; Milan (2)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- our work
+    <div class="our-work text-center pt-5 pb-5">
+        <div class="container">
+            <div class="main-title mt-5 mb-5 position-relative">
+                <img class="mb-4" src="images/title.png">
+                <h2>We Make This</h2>
+                <p class="text-black-50 text-uppercase">PREPARE TO BE AMAZED</p>
+            </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
+            <li class="active rounded-pill">All</li>
+            <li>Design</li>
+            <li>Code</li>
+            <li>Photo</li>
+            <li>App</li>
+        </ul>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Application">
+                    <img class="img-fluid" src="images/work-01.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Web Design">
+                    <img class="img-fluid" src="images/work-02.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Responsive">
+                    <img class="img-fluid" src="images/work-03.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Application">
+                    <img class="img-fluid" src="images/work-04.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Wesite Maintenanace">
+                    <img class="img-fluid" src="images/work-05.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Dynamic Website Development">
+                    <img class="img-fluid" src="images/work-06.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Coding">
+                    <img class="img-fluid" src="images/work-07.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box mb-3 bg-white" data-work="Data analysis">
+                    <img class="img-fluid" src="images/work-08.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn btn-danger  rounded-pill main-btn" href="#">I want more...</a>
+        </div>
+    </div> -->
+
+    <!-- meet the team -->
+    <div class="team text-center pb-5 pt-5" id="Current">
+        <div class="container pb-5 pt-5">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <div class="main-title mt-5 mb-5 position-relative">
+                    <img class="mb-4" src="images/title.png">
+                    <h2>Record Numbers</h2>
+                </div>
+            </div>
+            <!-- <p class="text-black-50 mb-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget
+                tincidunt nibh pulvinar a.
+                Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+                malesuada.
+            </p> -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="box bg-white">
+                            <img class="img-fluid" src="images2/84.jpg">
+                            <h4 class="p-3 text-light">Real Madrid</h4>
+                            <blockquote class="text-black-50 p-3">“A total of 23 clubs have won the tournament since its
+                                1955 inception,
+                                with Real Madrid being the only team to win it fourteen times, including the first
+                                five.“
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="box bg-white">
+                            <img class="img-fluid" src="images2/611b83d2a.webp">
+                            <h4 class="p-3 text-light">Cristiano Ronaldo</h4>
+                            <blockquote class="text-black-50 p-3">“Cristiano Ronaldo stands alone as the most prolific
+                                Champions League
+                                goalscorer of all time.“</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="box bg-white">
+                            <img class="img-fluid" src="images2/imag000.png">
+                            <h4 class="p-3 text-light">English clubs</h4>
+                            <blockquote class="text-black-50 p-3">“England is the country to boast the most number of
+                                different clubs to have won the UCL (5).“</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="box bg-white">
+                            <img class="img-fluid" src="images2/manchester-united-icon.png">
+                            <h4 class="p-3 text-light">Manchester United</h4>
+                            <blockquote class="text-black-50 p-3">“Manchester United (1998–99) with five wins. They also
+                                went through the competition unbeaten.“</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- techs -->
+    <div class="techs pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-1.png">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-2.png">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-3.png">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-4.png">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-1.png">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mb-3 mt-3">
+                    <img class="img-fluid" src="images/tech-2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project -->
+    <div class="project text-center pt-5 pb-5 text-light">
+        <h2>Some of the tournament sponsors</h2>
+        <!-- <p class="text-white-50">Leave your description and we start the engine.Don't worry,
+            you can cancel anytime
+        </p> -->
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn btn-danger  rounded-pill main-btn" href="#">Contact With Us</a>
+        </div>
+    </div>
+
+    <!-- subscribe -->
+    <div class="subscribe pt-5 pb-5 text-center text-md-start" id="Contact">
+        <div class="container">
+            <form class="row align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="fw-bold fs-5 mb-3">Subscribe to our Website :</div>
+                </div>
+                <div class="col-md-6 col-lg-7 mb-3">
+                    <input class="w-100 text-light p-2 bg-transparent" type="text"
+                        placeholder="Enter Your E-mail Address">
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <input class="btn rounded-pill" type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="info">
+                        <img class="mb-4" src="images2/Champions_league.icon-removebg-preview.png"
+                            style="width:150px; border-radius: 20px;">
+                        <p class="mb-5">The UEFA Champions League is an annual club association football competition
+                            organised by the Union of European Football Associations (UEFA).</p>
+                    </div>
+                    <div class="copyright">
+                        Created By <span>UEFA</span>
+                        <div>&copy; 2024 </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">Links</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Home</li>
+                            <li>Our Services</li>
+                            <li>Testimonials</li>
+                            <li>Support</li>
+                            <li>Terms and Condition</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">About Us</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Sign In</li>
+                            <li>Register</li>
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact">
+                        <h5 class="text-light">Contact Us</h5>
+                        <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone.We are waiting for your call or
+                            message</p>
+                        <a class="btn rounded-pill main-btn w-100" href="https://www.uefa.com/uefachampionsleague/"
+                            title="Go to The official website " target="_blank">
+                            The official website
+                        </a>
+                        <ul class="d-flex mt-5 list-unstyled gap-3">
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS animation -->
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
